@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="calculator-body">
+        <input type="text" id="calculator-display" readonly>
+        <div class="btns-group">
+           <button class="btns" onclick="calculator_display=' ';document.querySelector('#calculator-display').value=calculator_display"><i class='bx bx-refresh'></i></button>
+           <button class="btns" onclick="let undoLastElement=calculator_display.slice(0,-1);document.querySelector('#calculator-display').value=undoLastElement"><i class='bx bx-undo'></i></button>
+           <button class="btns" onclick="calculator_display=calculator_display*(0.01);document.querySelector('#calculator-display').value=calculator_display">%</button>
+           <button class="btns" onclick="`${calculator_display=calculator_display+'\''}`;document.querySelector('#calculator-display').value=calculator_display">\</button>
+           <button class="btns" onclick="calculator_display=calculator_display+7;document.querySelector('#calculator-display').value=calculator_display">7</button>
+           <button class="btns" onclick="calculator_display=calculator_display+8;document.querySelector('#calculator-display').value=calculator_display">8</button>
+           <button class="btns" onclick="calculator_display=calculator_display+9;document.querySelector('#calculator-display').value=calculator_display">9</button>
+           <button class="btns" onclick="calculator_display=calculator_display+'*';document.querySelector('#calculator-display').value=calculator_display"><i class='bx bx-x' ></i></button>
+           <button class="btns" onclick="calculator_display=calculator_display+4;document.querySelector('#calculator-display').value=calculator_display">4</button>
+           <button class="btns" onclick="calculator_display=calculator_display+5;document.querySelector('#calculator-display').value=calculator_display">5</button>
+           <button class="btns" onclick="calculator_display=calculator_display+6;document.querySelector('#calculator-display').value=calculator_display ">6</button>
+           <button class="btns" onclick="calculator_display=calculator_display+'-';document.querySelector('#calculator-display').value=calculator_display">-</button>
+           <button class="btns" onclick="calculator_display=calculator_display+1;document.querySelector('#calculator-display').value=calculator_display">1</button>
+           <button class="btns" onclick="calculator_display=calculator_display+2;document.querySelector('#calculator-display').value=calculator_display">2</button>
+           <button class="btns" onclick="calculator_display=calculator_display+3;document.querySelector('#calculator-display').value=calculator_display">3</button>
+           <button class="btns" onclick="calculator_display=calculator_display+'+';document.querySelector('#calculator-display').value=calculator_display">+</button>
+           <button class="btns" onclick="calculator_display=calculator_display+'00';document.querySelector('#calculator-display').value=calculator_display">00</button>
+           <button class="btns" onclick="calculator_display=calculator_display+'0';document.querySelector('#caculator-display').value=calculator_display">0</button>
+           <button class="btns" onclick="calculator_display=calculator+'.';document.querySelector('#calculator-display').value=calculator_display">.</button>
+           <button class="btns"  onclick="let result=eval(calculator_display);document.querySelector('#calculator-display').value=result;"style="background-color:rgb(238, 126, 13)">=</button>
+
+
+        </div>
+    </div>
+    <script src="calculator.js"> </script>
+</body>
+</html>

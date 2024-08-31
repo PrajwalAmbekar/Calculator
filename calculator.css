@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transform:translate(0,20%);
+    /*background:linear-gradient(45deg,rgb(85, 70, 99), #f9abab);*/
+    background-image: url(https://wallpapercave.com/wp/8iAP1eI.jpg);
+    margin:0;
+    padding:0;
+}
+.calculator-body{
+    height:35rem;
+    width: 20rem;
+    border:1px solid black;
+    border-radius:1rem;
+    box-shadow: 0.5rem 0.5rem 2rem 0.5rem rgb(114, 90, 53);
+    background-color:rgb(234, 103, 76)
+}
+#calculator-display{
+    height:80px;
+    width:85%;
+    margin:20px 20px;
+    margin-bottom:3.5rem;
+    border-radius:0.5rem;
+    font-size:3.5rem;
+    font-family: "DM Serif Text", serif;
+    background-color:rgb(233, 59, 59);
+}
+.btns-group{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height:71%;
+    border-top:1.5px solid black;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color:rgb(192, 65, 1);
+    /*padding-top: 1.38rem;*/
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+ 
+}
+.btns{
+    height:75px;
+    width:75px;
+    font-size: 1.5rem;
+    border-radius:50%;
+    border:none;
+    margin-right:0.3rem;
+    margin-top:0.1rem;
+    background:linear-gradient(rgb(223, 51, 51),rgb(215, 143, 9))
+
+}
